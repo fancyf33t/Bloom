@@ -1,0 +1,234 @@
+
+
+/* GENERAL RULES */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --prim: #e7718b;
+    --sec: #26292e;
+    --tert: #c6c6d6;
+    --quart: #ffff;
+    --bannerFont: 'WindSong', cursive; 
+    --sub-headerFont: 'Roboto', sans-serif;
+}
+
+.inner {
+    margin: 0 auto;
+    width: 960px;
+}
+/* .clear {
+    clear: both;
+    border: 1px solid red;
+} */
+a {
+    text-decoration: none;
+    color: var(--quart);
+}
+
+/* icons */
+
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+  
+  .icon-bubbles2 {
+    width: 1.125em;
+  }
+  
+
+/* ICON IMAGES
+
+<svg class="icon icon-bubbles2"><use xlink:href="#icon-bubbles2"></use></svg>
+<svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+<svg class="icon icon-cloud-download"><use xlink:href="#icon-cloud-download"></use></svg>
+<svg class="icon icon-star-full"><use xlink:href="#icon-star-full"></use></svg>
+<svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+<svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>*/
+
+
+
+
+
+/* CLOSE ICON */
+
+
+/* HEADER */
+.header {
+    background-color: var(--sec);
+    height: 80px;
+}
+.logo{
+    /* float: left; */
+    /* margin-left: 150px; */
+    font-size: 35px;
+    font-family: var(--bannerFont);
+    text-transform: capitalize;
+    color: var(--quart)
+}
+/* .social-list {
+    border: 1px solid blue;
+    /* width: 350px;
+    margin-left: 700px; */
+.top-nav {
+    float: right;
+    margin-top: -80px;
+}
+
+.so-list-item {
+    display: inline;
+    margin: 10px;
+}
+
+
+.icon-facebook, .icon-twitter, .icon-rss {
+    border: 1px solid var(--quart);
+    color: var(--sec);
+    background-color: var(--quart);
+    border-radius: 50%;
+    font-size: 25px;
+}
+/* END HEADER */
+
+.section1 {
+    background-color: var(--prim);
+    height: 500px;
+}
+
+.block1, .block2 {
+    width: 45%;
+    float: left;
+}
+
+
+.block1 {
+    /* border: 1px solid blue; */
+    width: 450px;
+    /* margin-left: 150px; */
+    padding-top: 20px;
+    font-size: 20px;
+    color: var(--quart);
+    font-family: var(--sub-headerFont);
+}
+
+.button {
+    font-size: 20px;
+    border-radius: 5px;
+    border-style: outset;
+    background-color: var(--sec);
+    color: whitesmoke;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: orchid;
+    transition: 3s ease;
+}
+.block2 {
+    /* border: 1px solid green; */
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 10px;
+    /* width: 350px; */
+    
+    /* margin-left: 900px; */
+}
+
+.landing-img {
+    width: 125%;
+}
+
+.section2 {
+    border-bottom: 5px solid var(--prim);
+    background-color: var(--tert);
+    height: 350px;
+    margin: 0;
+    padding: 0;
+}
+.block3, .block4, .block5 {
+    width: 300px;
+    float: left;
+    /* border: 1px solid blue; */
+    font-size: smaller;
+    margin: 10px;
+    font-family: var(--sub-headerFont);
+}
+
+.block6 .sub-header {
+    margin: 0;
+}
+.block6 { /*how am I going to target each one separately?*/
+    /* border: 1px solid blue; */
+    width: 640px;
+    float: left;
+}
+.icon-search {
+    color: var(--quart);
+    background-color: var(--sec);
+    border: 5px solid gray;
+    width: 250px;
+    height: 100px;
+}
+.product1 {
+    margin-top: 25px;
+    margin-left: 0;
+    float: left;
+}
+.product2 {
+    float: left;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.product3 {
+    float: left;
+    margin-top: 30px;
+    margin-left: 0;
+}
+.product4 {
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+.aside-text .bold{
+    font-weight: bold;
+}
+
+
+
+/* CLOSE MAIN */
+
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--sec);
+    height: 50px;
+}
+
+.colophon {
+    float: left;
+    margin-right: 400px;
+}
+
+/* CLOSE FOOTER */

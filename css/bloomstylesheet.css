@@ -1,0 +1,47 @@
+/* Let's try this again. I should have a good bit saved from my first attempt.
+let's make this a bit better than before. You will save your general rules
+and basic structure points in this css file but then create new ones for each
+styling attempt: mpf, position, flex
+
+Don't forget to link the proper fonts in you html files
+
+font-family: 'Roboto', sans-serif;
+font-family: 'WindSong', cursive;
+*/
+
+
+
+/* GENERAL RULES */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --prim: #e7718b;
+    --sec: #26292e;
+    --tert: #c6c6d6;
+    --quart: #ffff;
+    --bannerFont: font-family: 'WindSong', cursive; 
+    --sub-headerFont: font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+  
+  .icon-bubbles2 {
+    width: 1.125em;
+  }

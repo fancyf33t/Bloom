@@ -1,0 +1,129 @@
+/* Use your comments to store any additional information to help with the styling */
+
+/* 
+banner name - font-family: 'Butterfly Kids', cursive;
+sub-header - font-family: 'Roboto', sans-serif; 
+background color - #ec8299
+banner background color - #1d2023
+button color - gray outset style?*/
+* {
+    box-sizing: border-box;
+}
+/* General Rules */
+:root {
+    --prim: #e7718b;
+    --sec: #26292e;
+    --tert: #c6c6d6;
+    --quart: #ffff;
+    --headerFont: font-family: 'Roboto', sans-serif;
+    --bannerFont: font-family: 'Butterfly Kids', cursive;
+}
+
+/* body {
+    margin: 0 auto;
+    width: 1200px;
+} */
+
+/* CLOSE GENERAL RULES */
+
+
+
+/* HEADER */
+
+.top-header-name {
+    font-family: var(--bannerFont);
+    color: whitesmoke;
+    margin-left: 200px;
+}
+
+
+.top-header {
+    border: 1px solid blue;
+    position: relative;
+    background-color: var(--sec);
+}
+.top-nav-item {
+    display: inline;
+    position: absolute;
+}
+.top-nav-item:nth-child(1) {
+    top: 10px;
+    right: 20%;
+}
+.top-nav-item:nth-child(2) {
+    top: 10px;
+    right: 15%;
+}
+.top-nav-item:nth-child(3) {
+    top: 10px;
+    right: 10%;
+}
+/* CLOSE HEADER */
+
+
+/* OPEN MAIN */
+
+.welcome {
+    border: 1px solid red;
+    background-color: var(--prim);
+    position: relative;
+    height: 400px;
+}
+.welcome-section {
+    border: 1px solid blue;
+    width: 550px;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    color: whitesmoke;
+}
+
+.button {
+    font-size: xx-large;
+    border-radius: 10px;
+    border-style: outset;
+    background-color: var(--sec);
+    color: whitesmoke;
+    margin: 10px;
+}
+.laptop-image {
+    position: absolute;
+    top: 70px;
+    right: 325px;
+}
+
+.content-section {
+    border: 1px solid blue;
+    position: relative;
+    background-color: var(--tert);
+    height: 500px;
+}
+.content-slot1, .content-slot2, .content-slot3 {
+    border: 1px solid red;
+    width: 300px;
+}
+.content-slot1 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+.content-slot2 {
+    position: absolute;
+    top: 0;
+    right: 600px;
+}
+.content-slot3 {
+    position: absolute;
+    top: 0;
+    right: 200px;
+}
+
+
+.product-section {
+    border: 1px solid darkred;
+    height: 600px;
+}
+.products {
+    font-size: 20px;
+}
+/* CLOSE MAIN */

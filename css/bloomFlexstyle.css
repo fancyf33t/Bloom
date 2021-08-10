@@ -1,0 +1,199 @@
+/* Let's try this again. I should have a good bit saved from my first attempt.
+let's make this a bit better than before. You will save your general rules
+and basic structure points in this css file but then create new ones for each
+styling attempt: mpf, position, flex
+
+Don't forget to link the proper fonts in you html files
+
+font-family: 'Satisfy', cursive;
+font-family: 'Source Code Pro', monospace;
+*/
+
+
+
+/* GENERAL RULES */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --prim: #e7718b;
+    --sec: #26292e;
+    --tert: #c6c6d6;
+    --quart: #ffff;
+    --bannerFont: 'Satisfy', cursive;
+    --sub-headerFont: 'Source Code Pro', monospace;
+}
+a {
+    text-decoration: none;
+}
+
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+
+.icon-bubbles2 {
+    width: 1.125em;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: var(--sec);
+}
+.header .inner {
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    /* border: 1px solid rgb(0, 183, 255); */
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    color: var(--quart);
+    font-family: var(--bannerFont);
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.so-list-item {
+    display: inline;
+    margin: 20px;
+}
+
+.icon-facebook, .icon-twitter, .icon-rss {
+    border: 1px solid var(--quart);
+    color: var(--sec);
+    background-color: var(--quart);
+    border-radius: 50%;
+    font-size: 30px;
+}
+.social-list {
+    /* border: 1px solid pink; */
+    width: 300px;
+}
+
+.landing-img {
+    width: 30%;
+}
+
+.button {
+    font-size: 20px;
+    border-radius: 5px;
+    border-style: outset;
+    background-color: var(--sec);
+    color: whitesmoke;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: orchid;
+    transition: 3s ease;
+}
+
+/* CLOSE HEADER */
+
+/* MAIN  */
+
+
+.main .inner {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* background-color: var(--prim); */
+}
+
+
+.section1 {
+    background-color: var(--prim);
+}
+
+.block1 {
+    width: 400px;
+    /* border: 1px solid blue; */
+    margin-left: 80px;
+    padding: 0;
+    font-family: var(--sub-headerFont);
+    color: var(--quart);
+}
+.landing-img {
+    width: 150%;
+    padding-right: 300px;
+}
+.section2 {
+    background-color: var(--tert);
+    border-bottom: 4px solid var(--prim);
+}
+
+.block3, .block4, .block5 {
+    width: 350px;
+    /* border: 1px solid blue; */
+}
+.block3 {
+    margin-left: 175px;
+}
+.block5 {
+    margin-right: 145px;
+}
+/* .section2 */
+
+.block6 {
+    /* border: 1px solid blue; */
+    width: 700px;
+    height: 400px;
+    margin-left: 40px;
+    /* display: flex;
+    justify-content: space-around; */
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product {
+    width: 300px;
+    height: 150px;
+    border: 6px solid var(--tert);
+    background-color: black;
+    margin: 10px;
+}
+.icon-search {
+    margin: 60px 130px;
+    font-size: 40px;
+    color: var(--tert);
+}
+.aside {
+    width: 350px;
+    margin-left: -200px;
+}
+.aside-text .bold{
+    font-weight: bold;
+}
+/* CLOSE MAIN */
+
+
+/* FOOTER */
+.footer {
+    background-color: var(--sec);
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* CLOSE FOOTER */
